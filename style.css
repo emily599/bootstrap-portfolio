@@ -1,0 +1,104 @@
+/* leaf background image */
+body {
+    margin:0px;
+    background-image:url(./assets/images/leaves-pattern.png);
+    background-style: repeat;
+    width: 100%;
+}
+
+/* header with navbar */
+ .justify-content-end {
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dddddd; 
+}
+/* navbar titles */
+a {
+    color: #777777;
+    text-decoration: none;
+    font-family: 'arial', 'helvetica neue', 'helvetiva', 'sans-serif'; 
+
+}
+
+/* "Emily Doan" on navbar*/
+.navbar.navbar-light.bg-light{
+    background-color: #4aaaa5!important;
+    padding: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 0px;
+ }
+
+ 
+.navbar-light .navbar-text {
+    color: white;
+}
+
+#aboutme {
+    padding: 20px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    border-bottom-color: #dddddd;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;}
+
+
+ /* box of content */
+.container-fluid {
+    background-color: white;
+    font-family: 'arial', 'helvetica neue', 'helvetiva', 'sans-serif';
+    border-width: 2px;
+    border-color: #dddddd;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dddddd;
+    color: #777777;
+    margin-bottom: 50px;
+    overflow: auto;
+    line-height: 30px;
+    position: relative;
+} 
+p {
+    overflow: auto;
+}
+
+/* image on index.html */
+.img-thumbnail {
+    width: 240px;
+    height: 240px;
+}
+
+/*footer on all pages*/
+footer {
+    color: white;
+    background-color: #777777;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-top-width: 8px;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    bottom: 0;
+    width: 100%;
+    text-align: center; 
+}
+
+/* media queries */
+ /* Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { } 
