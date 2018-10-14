@@ -1,6 +1,6 @@
 html {
     /* position: relative; */
-
+    height:100%;
 }
 
 /* leaf background image */
@@ -9,6 +9,11 @@ body {
     background-image:url(./assets/images/leaves-pattern.png);
     background-style: repeat;
     width: 100%;
+    height: 100%;
+    /* padding-bottom:50px; */
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* header with navbar */
@@ -53,7 +58,7 @@ a {
 
 
  /* box of content */
-.container-fluid {
+.wrapper {
     background-color: white;
     font-family: 'arial', 'helvetica neue', 'helvetiva', 'sans-serif';
     border-width: 2px;
@@ -67,10 +72,18 @@ a {
     border-color: #dddddd;
     color: #777777;
     margin-bottom: 50px;
-    overflow: auto;
+    /* overflow: auto; */
     line-height: 30px;
-   position: relative;
+    /* min-height: 100%; */
+    /* position: relative; */
+    /* height: 100%; */
+
+    flex: 1 0 auto;
 }
+
+
+
+
 
 /* profile pic on index.html */
 .img-thumbnail {
@@ -79,20 +92,37 @@ a {
     float: left;
     margin: 15px;
 }
-
-body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
-  }
+  
 
 .footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
     width: 100%;
     height: 60px; /* Set the fixed height of the footer here */
     line-height: 60px; /* Vertically center the text there */
     background-color: #4aaaab;
+    left: 0 ; right: 0; bottom: 0; 
+    height:-50px;
 
+    flex-shrink: 0;
   }
+.col-sm {
+    position: relative;
+    padding: 20px;
+}
+/* banner on top of portfolio images */
+  .banneronimg {
+    position: absolute;
+    background-color: #4aaaa5;
+    text-align: center;
+    width: 300px;
+    margin-top: -85px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
 
 /* media queries */
  /* Extra small devices (portrait phones, less than 576px) */
@@ -109,6 +139,7 @@ body {
     }
     .container-fluid {
         width: 100%;
+        margin-right: 40px;
     }
 
  }
@@ -122,10 +153,19 @@ body {
     html {
         width: 100%;
     }
+    .container-fluid {
+        width: 100%;
+        margin-right: 40px;
+    }
  }
 
 /* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) { }
+@media (max-width: 992px) {
+    .container-fluid {
+        width: 100%;
+        margin: 40px;
+    }
+ }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) { } 
